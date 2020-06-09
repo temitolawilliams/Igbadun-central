@@ -1,98 +1,141 @@
 /** Utilities CSS **/
 
-body{
-    color: black;
-    font-family: 'Poppins', sans-serif;
+body {
+  color: black;
+  font-family: 'Poppins', sans-serif;
 }
 
 @font-face {
-    font-family: Playfair-Bold;
-    src: url(../fonts/PlayfairDisplay-Bold.otf);
-    font-weight: bold;
-    font-display: block;
-  }
-
-  @font-face {
-    font-family: Playfair;
-    src: url(../fonts/PlayfairDisplay-Regular.otf);
-    font-weight: bold;
-    font-display: block;
-  }
-
-  /** Header  */
-  .navbar-brand{
-      font-family: Playfair-Bold;
-      color: black;
-  }
-
-.nav-item a{
-      color:rgba(0, 0, 0, 0.5);
-      font-weight: 500;
-  }
-
-  .nav-item a:hover{
-    color:#3590F3;
+  font-family: Playfair-Bold;
+  src: url(../fonts/PlayfairDisplay-Bold.otf);
+  font-weight: bold;
+  font-display: block;
 }
 
-.active{
-    color:#3590F3 !important;
-    font-weight: 600 !important;
+@font-face {
+  font-family: Playfair;
+  src: url(../fonts/PlayfairDisplay-Regular.otf);
+  font-weight: bold;
+  font-display: block;
 }
 
+/** Header  */
+.navbar-brand {
+  font-family: Playfair-Bold;
+  color: black;
+}
+
+.nav-item a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.nav-item a:hover {
+  color: #3590f3;
+}
+
+.active {
+  color: #3590f3 !important;
+  font-weight: 600 !important;
+}
+#top-text {
+  padding: 120px;
+}
+
+#home-about {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.review {
+  text-align: center;
+  padding: 20px 200px 20px 200px;
+}
+#blog-overview {
+  text-align: center;
+  padding-top: 50px;
+}
+#top-text {
+    text-align: center;
+    left: 50%
+    right: 50%
+    padding: 100px 0px;
+    position: absolute;
+}
 
 /** Footer **/
+@media only screen and (max-width: 790px) {
+  #top-text {
+    height: 0vw;
+  }
+ 
+  
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 13px;
+  }
+  h6 {
+    font-size: 10px;
+  }
 
-.my-footer{
-    background-color:  #3590F3;
-    padding: 100px 0 20px 0;
-    color: #FFF 
+  p {
+    font-size: 10px;
+  }
 
+  a {
+    font-size: 10px;
+  }
+}
+.my-footer {
+  background-color: #3590f3;
+  padding: 100px 0 20px 0;
+  color: #fff;
 }
 
-.footer-brand{
-    font-family: Playfair-Bold;
-    
+.footer-brand {
+  font-family: Playfair-Bold;
 }
 
-.my-footer a{
-    color: #FFF !important;
+.my-footer a {
+  color: #fff !important;
 }
 
-.my-footer ul{
-    list-style-type: none;
-    padding-left: 0;
+.my-footer ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.my-footer li{
-    margin-bottom: .9rem;
-    font-weight: 300;
+.my-footer li {
+  margin-bottom: 0.9rem;
+  font-weight: 300;
 }
 
-.my-footer h5{
-
-    font-weight:600;
-    font-size: 16px;
-    margin-bottom: 1.4rem;
-
+.my-footer h5 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 1.4rem;
 }
 
-footer > .container > .row > .col-md-12{
-    margin-top: 30px;
+footer > .container > .row > .col-md-12 {
+  margin-top: 30px;
 }
 
 /** Mobile Res */
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 425px) {
+  footer > .container > .row > .col-md-3 {
+    margin-bottom: 30px;
+  }
 
+  .my-footer {
+    padding: 50px 0 20px 0;
+  }
 
-    footer > .container > .row > .col-md-3{
-        margin-bottom: 30px;
-    }
-
-    .my-footer{
-        padding: 50px 0 20px 0;
-    }
-
-    footer > .container > .row > .col-md-12{
-        margin-top: 0;
-    }
+  footer > .container > .row > .col-md-12 {
+    margin-top: 0;
+  }
 }
